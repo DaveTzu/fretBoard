@@ -28,11 +28,12 @@ body {
 .TEST {
   height: 75px;
   width: 6.286vw;
-  background-color: crimson;
+  background-color: rgb(135, 230, 243);
   z-index: 1;
   position: absolute;
   top: calc( 45vh/5 * 0.4);
   left: calc(75px + 0.55vw);
+  border: solid 1px black;
   border-radius: 25px;
 }
 
@@ -40,11 +41,12 @@ body {
 .TEST2 {
   height: 75px;
   width: 6.286vw;
-  background-color: purple;
+  background-color: rgb(135, 230, 243);
   z-index: 1;
   position: absolute;
   top: calc( 45vh/5 * 1.4);
   left: calc(75px + 0.55vw);
+  border: solid 1px black;
   border-radius: 25px;
 }
 
@@ -52,42 +54,46 @@ body {
 .TEST3 {
   height: 75px;
   width: 6.286vw;
-  background-color: cornflowerblue;
+  background-color: rgb(135, 230, 243);
   z-index: 1;
   position: absolute;
   top: calc( 45vh/5 * 2.4);
   left: calc(75px + 0.55vw);
+  border: solid 1px black;
   border-radius: 25px;
 }
 
 .TEST4 {
   height: 75px;
   width: 6.286vw;
-  background-color: rgb(244, 150, 249);
+  background-color: rgb(135, 230, 243);
   z-index: 1;
   position: absolute;
   top: calc( 45vh/5 * 3.4);
   left: calc(75px + 0.55vw);
+  border: solid 1px black;
   border-radius: 25px;
 }
 .TEST5 {
   height: 75px;
   width: 6.286vw;
-  background-color: greenyellow;
+  background-color: rgb(135, 230, 243);
   z-index: 1;
   position: absolute;
   top: calc( 45vh/5 * 4.4);
   left: calc(75px + 0.55vw);
+  border: solid 1px black;
   border-radius: 25px;
 }
 .TEST6 {
   height: 75px;
   width: 6.286vw;
-  background-color: yellow;
+  background-color: rgb(135, 230, 243);
   z-index: 1;
   position: absolute;
   top: calc( 45vh/5 * 5.4);
   left: calc(75px + 0.55vw);
+  border: solid 1px black;
   border-radius: 25px;
 }
 
