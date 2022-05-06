@@ -1,0 +1,170 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+.TEST {
+  height: 75px;
+  width: 6.286vw;
+  background-color: crimson;
+  z-index: 1;
+  position: absolute;
+  top: calc( 45vh/5 * 0.4);
+  left: calc(75px + 0.55vw);
+  border-radius: 25px;
+}
+
+
+.TEST2 {
+  height: 75px;
+  width: 6.286vw;
+  background-color: purple;
+  z-index: 1;
+  position: absolute;
+  top: calc( 45vh/5 * 1.4);
+  left: calc(75px + 0.55vw);
+  border-radius: 25px;
+}
+
+
+.TEST3 {
+  height: 75px;
+  width: 6.286vw;
+  background-color: cornflowerblue;
+  z-index: 1;
+  position: absolute;
+  top: calc( 45vh/5 * 2.4);
+  left: calc(75px + 0.55vw);
+  border-radius: 25px;
+}
+
+.TEST4 {
+  height: 75px;
+  width: 6.286vw;
+  background-color: rgb(244, 150, 249);
+  z-index: 1;
+  position: absolute;
+  top: calc( 45vh/5 * 3.4);
+  left: calc(75px + 0.55vw);
+  border-radius: 25px;
+}
+.TEST5 {
+  height: 75px;
+  width: 6.286vw;
+  background-color: greenyellow;
+  z-index: 1;
+  position: absolute;
+  top: calc( 45vh/5 * 4.4);
+  left: calc(75px + 0.55vw);
+  border-radius: 25px;
+}
+.TEST6 {
+  height: 75px;
+  width: 6.286vw;
+  background-color: yellow;
+  z-index: 1;
+  position: absolute;
+  top: calc( 45vh/5 * 5.4);
+  left: calc(75px + 0.55vw);
+  border-radius: 25px;
+}
+
+.fretBoard{
+  height: 45vh;
+  width: 85.75vw;
+  background-color: navajowhite;
+  margin-left: 75px;
+  margin-top: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.fret {
+  height: calc(45vh / 5);
+  border: solid 1px black;
+  display:flex;
+  justify-content: center;
+}
+
+.one {
+  width: calc(4.49vw * 1.75);
+  border-right: solid 10px black
+}
+
+.two {
+  width: calc(4.238vw * 1.75);
+}
+
+.three {
+  width: calc(4vw * 1.75);
+}
+
+.four {
+  width: calc(3.776vw * 1.75);
+}
+
+.five {
+  width: calc(3.564vw * 1.75);
+}
+
+.six {
+  width: calc(3.364vw * 1.75);
+}
+
+.seven,.eight,.nine,.ten,.eleven,.twelve,.thirteen,.fourteen {
+  width: calc(3.175vw * 1.75);
+}
+
+
+.dot{
+  height: 47px;
+  width: 47px;
+  background-color: gray;
+  border-radius: 50%;
+  align-self: center;
+
+}
+
+.openCol{
+  background-color: red;
+  height: (45 / 6) * 1vh;
+  width: 80 / 15vw;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
