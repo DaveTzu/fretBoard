@@ -25,76 +25,103 @@ body {
 
 }
 
-.TEST {
+.note {
   height: 75px;
-  width: 6.286vw;
+  width: 5vw;
   background-color: rgb(135, 230, 243);
   z-index: 1;
   position: absolute;
+  border: solid 1px black;
+  border-radius: 25px;
+}
+
+.string1{
   top: calc( 45vh/5 * 0.4);
-  left: calc(75px + 0.55vw);
-  border: solid 1px black;
-  border-radius: 25px;
 }
 
-
-.TEST2 {
-  height: 75px;
-  width: 6.286vw;
-  background-color: rgb(135, 230, 243);
-  z-index: 1;
-  position: absolute;
+.string2{
   top: calc( 45vh/5 * 1.4);
-  left: calc(75px + 0.55vw);
-  border: solid 1px black;
-  border-radius: 25px;
 }
 
-
-.TEST3 {
-  height: 75px;
-  width: 6.286vw;
-  background-color: rgb(135, 230, 243);
-  z-index: 1;
-  position: absolute;
+.string3{
   top: calc( 45vh/5 * 2.4);
-  left: calc(75px + 0.55vw);
-  border: solid 1px black;
-  border-radius: 25px;
 }
 
-.TEST4 {
-  height: 75px;
-  width: 6.286vw;
-  background-color: rgb(135, 230, 243);
-  z-index: 1;
-  position: absolute;
+.string4{
   top: calc( 45vh/5 * 3.4);
-  left: calc(75px + 0.55vw);
-  border: solid 1px black;
-  border-radius: 25px;
 }
-.TEST5 {
-  height: 75px;
-  width: 6.286vw;
-  background-color: rgb(135, 230, 243);
-  z-index: 1;
-  position: absolute;
+
+.string5{
   top: calc( 45vh/5 * 4.4);
-  left: calc(75px + 0.55vw);
-  border: solid 1px black;
-  border-radius: 25px;
 }
-.TEST6 {
-  height: 75px;
-  width: 6.286vw;
-  background-color: rgb(135, 230, 243);
-  z-index: 1;
-  position: absolute;
+
+.string6{
   top: calc( 45vh/5 * 5.4);
+}
+
+.fret0,.fret1,.fret2{
+  width: 6.286vw;
+}
+
+.fret0 {
   left: calc(75px + 0.55vw);
-  border: solid 1px black;
-  border-radius: 25px;
+}
+
+.fret1{
+  left: calc(75px + 8.4vw);
+}
+
+.fret2 {
+  left: calc(75px + 15.6vw);
+}
+
+.fret3,.fret4 {
+  width: 5.572vw
+}
+
+.fret3 {
+  left: calc(75px + 22.75vw);
+}
+
+.fret4 {
+  left: calc(75px + 29.20vw);
+}
+
+.fret5 {
+  width: 5.286vw;
+  left: calc(75px + 35.40vw);
+}
+
+.fret6 {
+  left: calc(75px + 41.25vw);
+}
+
+.fret7 {
+  left: calc(75px + 46.85vw);
+}
+
+.fret8 {
+  left: calc(75px + 52.40vw);
+}
+
+.fret9 {
+  left: calc(75px + 57.95vw);
+}
+
+.fret10 {
+  left: calc(75px + 63.5vw);
+}
+
+.fret11{
+  left: calc(75px + 69.05vw);
+}
+
+.fret12{
+  left: calc(75px + 74.6vw);
+}
+
+.fret13 {
+  left: calc(75px + 80.15vw);
 }
 
 .fretBoard{
@@ -154,11 +181,6 @@ body {
 
 }
 
-.openCol{
-  background-color: red;
-  height: (45 / 6) * 1vh;
-  width: 80 / 15vw;
-}
 
 /******************************************
 /* LAYOUT
