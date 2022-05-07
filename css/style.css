@@ -28,10 +28,10 @@ body {
 .note {
   height: 75px;
   width: 5vw;
-  background-color: rgb(135, 230, 243, 0.1);
+  background-color: rgb(135, 230, 243, 0);
   z-index: 1;
   position: absolute;
-  border: solid 2px black;
+  /* border: solid 2px black; */
   border-radius: 25px;
 }
 
