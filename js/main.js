@@ -6,5 +6,8 @@ butts.forEach(but => {
 });
 
 function playNote(e) {
-    sounds[e.target.classList[2].split('fret').pop()].play()
+    console.log(e.target.dataset.note)
+    //sounds[e.target.classList[2].split('fret').pop()].play()
+    sound = Array.from(sounds).find(s => s.dataset.note === e.target.dataset.note)
+    sound.play()
 }
