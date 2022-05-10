@@ -2,6 +2,31 @@ const sounds = document.querySelectorAll('audio')
 butts = document.querySelectorAll('.note')
 let playing, string1, string2, string3, string4, string5, string6
 
+chord =    [ Array.from(sounds).find(s => s.dataset.note === 'E2'), 
+             Array.from(sounds).find(s => s.dataset.note === 'B2'),
+             Array.from(sounds).find(s => s.dataset.note === 'E3'),
+             Array.from(sounds).find(s => s.dataset.note === 'Gs3'),
+             Array.from(sounds).find(s => s.dataset.note === 'B3'),
+             Array.from(sounds).find(s => s.dataset.note === 'E4')]
+
+function playChord(){
+    chord.forEach(a => {
+        a.play()
+        setTimeout(function(){
+            console.log('what')
+        }, 1000)
+    })
+}
+
+function playChord2(){
+    chord[0].play()
+    setTimeout(function(){ chord[1].play() }, 15)
+    setTimeout(function(){ chord[2].play() }, 25)
+    setTimeout(function(){ chord[3].play() }, 35)
+    setTimeout(function(){ chord[4].play() }, 45)
+    setTimeout(function(){ chord[5].play() }, 55)
+}
+
 
 butts.forEach(but => {
     but.addEventListener('click', playNote)
@@ -9,7 +34,6 @@ butts.forEach(but => {
 
 function playNote(e) {
     console.log(e.target.dataset.note)
-    //sounds[e.target.classList[2].split('fret').pop()].play()
     sound = Array.from(sounds).find(s => s.dataset.note === e.target.dataset.note)
     if(!string1 && e.target.classList[1] === 'string1') {
         string1 = sound
@@ -69,7 +93,6 @@ function playNote(e) {
         string6.play()
     }
     else {
-        playing.pause()
         playing = sound
         sound.currentTime = 0;
         sound.play()
