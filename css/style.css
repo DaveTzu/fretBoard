@@ -28,10 +28,9 @@ body {
 .note {
   height: 75px;
   width: 5vw;
-  background-color: rgb(135, 230, 243, .8);
+  background-color: rgb(135, 230, 243, 0);
   z-index: 1;
   position: absolute;
-  /* border: solid 2px black; */
   border-radius: 25px;
   display: flex;
   align-items: center;
@@ -41,6 +40,16 @@ body {
 .note > span {
   font-size: 1.8em;
   pointer-events: none;
+  visibility: hidden;
+}
+
+.playingNote {
+  border: solid 2px black;
+  background-color: rgb(135, 230, 243, 1);
+}
+
+.playingNote > span {
+  visibility: visible;
 }
 
 .string1{

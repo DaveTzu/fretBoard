@@ -34,6 +34,7 @@ butts.forEach(but => {
 
 function playNote(e) {
     console.log(e.target.dataset.note)
+    
     sound = Array.from(sounds).find(s => s.dataset.note === e.target.dataset.note)
     if(!string1 && e.target.classList[1] === 'string1') {
         string1 = sound
@@ -97,4 +98,13 @@ function playNote(e) {
         sound.currentTime = 0;
         sound.play()
     }
+    e.target.classList.add('playingNote')
+    removeAfterThreeSeconds(e.target)
+}
+
+function removeAfterThreeSeconds(element) {
+    setTimeout(function() {
+        console.log(element)
+        element.classList.remove('playingNote')
+    }, 2000)
 }
