@@ -28,7 +28,7 @@ body {
 .note {
   height: 75px;
   width: 5vw;
-  background-color: rgb(135, 230, 243, 0);
+  background-color: rgb(135, 230, 243, 1);
   z-index: 1;
   position: absolute;
   border-radius: 25px;
@@ -75,6 +75,35 @@ body {
 .string6{
   top: calc( 45vh/5 * 5.4);
 }
+
+.hoverStringMode {
+  height: 20px;
+}
+
+.hoverStringMode.string1{
+  top: calc( 45vh/5 * 0.4 + 27px);
+}
+
+.hoverStringMode.string2{
+  top: calc( 45vh/5 * 1.4 + 27px);
+}
+
+.hoverStringMode.string3{
+  top: calc( 45vh/5 * 2.4 + 27px);
+}
+
+.hoverStringMode.string4{
+  top: calc( 45vh/5 * 3.4 + 27px);
+}
+
+.hoverStringMode.string5{
+  top: calc( 45vh/5 * 4.4 + 27px);
+}
+
+.hoverStringMode.string6{
+  top: calc( 45vh/5 * 5.4 + 27px);
+}
+
 
 .fret0,.fret1,.fret2{
   width: 6.286vw;
@@ -140,6 +169,7 @@ body {
 .fret13 {
   left: calc(75px + 80.15vw);
 }
+
 
 .fretBoard{
   height: 45vh;
